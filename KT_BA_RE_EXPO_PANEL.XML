@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+    <preview interactive="true" />
+
+    <ARTICLE>
+        <ART_NAME>KT_BA_RE_EXPO_PANEL</ART_NAME>
+        <ART_TYPE>ANGOLO</ART_TYPE>
+        <ART_DESIGN />
+        <ART_INFO_LONG />
+        <ART_INFO_SHORT>Kitchen Base Expo Panel Right</ART_INFO_SHORT>
+    </ARTICLE>
+
+    <DEFINITION>
+
+        <PARAFOLDER name="DIMENSIONS" label="Dimensions" active="TRUE" visible="TRUE" nosave="FALSE">
+
+            <GROUP name="GR_DIMENSIONS" label="Dimensions">
+			
+			 <EDITBOX label="Article Insertion height" name="___ARTICLE_POS_Z"  valuetype="TEXT" active="TRUE" visible="TRUE"  locked="FALSE" default="1440" image1="img/"  geoInfluencing="FALSE"/>
+
+                <EDITBOX name="ART_SIZEZ" label="Height (mm)" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="700" min="500" max="900" valuetype="NUM" geoInfluencing="TRUE"/>
+                   
+
+                <EDITBOX name="ART_SIZEX" label="Width (mm)" active="TRUE" visible="TRUE" nosave="FALSE" locked="TRUE" valuetype="NUM" min="18" max="25" default="18" geoInfluencing="TRUE" />
+
+                <EDITBOX name="ART_SIZEY" label="Depth (mm)" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" valuetype="NUM" min="400" max="600" default="560" geoInfluencing="TRUE" />
+
+            </GROUP>
+
+        </PARAFOLDER>
+
+        <PARAFOLDER name="SH_COLOUR" label="Shutter Material and Colours" active="TRUE" visible="TRUE" nosave="FALSE">
+
+            <GROUP name="GR_SH_MAT" label="Shutter Materials" active="TRUE" visible="TRUE">
+
+                <COMBOBOX name="DC_KT_BA_SHUTTER_MAT" label="Shutter Material" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="LAMINATE" valuetype="TEXT" geoInfluencing="TRUE">
+                    <ITEM value="LAMINATE" label="LAMINATE" />
+                    <ITEM value="ACRYLIC" label="ACRYLIC" />
+                    <ITEM value="DUCO" label="DUCO" />                 
+                    <ITEM value="VENEER" label="VENNER" />
+                 
+                </COMBOBOX>
+
+            </GROUP>
+
+            <GROUP name="GR_SH_SURF" label="Front Colours" active="TRUE" visible="TRUE">
+
+                <COMBOBOX name="DC_BA_COL_FIN_CAT_1" label="Finish Category" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="DC_Nova" valuetype="TEXT" geoInfluencing="TRUE">
+                    <ITEM value="DC_Nova" label="DC Nova" />
+                    <ITEM value="DC_Abetti" label="DC Abetti" />
+		            <ITEM value="DC_Premium" label="DC Premium" />
+		            <ITEM value="DC_Signature" label="DC Signature" />
+                 </COMBOBOX>
+
+                <GROUP name="GR_SH_LAM" label="Laminate Colours" active="TRUE" visible="TRUE">
+
+                   <COMBOBOX name="DC_BA_Col_Typ_1" label="Colour Types" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="" valuetype="TEXT" geoInfluencing="TRUE">
+                    <COMMAND type="INSERT" file="INS_KT_BA_LOGICS.xml" part="DC_BA_Col_Typ_1" />
+                   </COMBOBOX>
+				
+				   <COMBOBOX name="DC_BA_Col_Fin_1" label="Finshes" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="" valuetype="TEXT" geoInfluencing="TRUE">
+                    <COMMAND type="INSERT" file="INS_KT_BA_LOGICS.xml" part="DC_BA_Col_Fin_1" />
+                   </COMBOBOX>
+				   
+				   <COMBOBOX name="DC_SPP_GLS" label="Shutter Colour" active="TRUE" visible="FALSE" nosave="FALSE" locked="FALSE" default="" valuetype="IMAGE" geoInfluencing="TRUE">
+                    <COMMAND type="INSERT" file="INS_KT_BA_LOGICS.xml" part="Laq_Shutter_Color_List" />
+                   </COMBOBOX>
+				   
+				   <COMBOBOX name="DC_KT_BA_SHUTTER_COLOR" label="Shutter Colour" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="" valuetype="IMAGE"  geoInfluencing="TRUE">
+                    <COMMAND type="INSERT" file="INS_KT_BA_LOGICS.xml" part="Shutter_Color_List" />
+                   </COMBOBOX>
+
+                </GROUP>
+
+            </GROUP>
+
+        </PARAFOLDER>
+
+		 <PARAFOLDER name="CB_COLOUR" label="Carcass Material and Colours" active="TRUE" visible="FALSE" nosave="FALSE">
+
+            <GROUP name="GR_CB_MAT" label="Carcass Materials">
+
+                <CHECKBOX name="DC_CB_PRELAM" label="Click for Prelam" default="No" checked="Yes" unchecked="No" active="TRUE" visible="FALSE" locked="TRUE" geoInfluencing="TRUE" />
+
+                <COMBOBOX name="DC_KT_BA_CARCASS_MAT" label="Carcass Material" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="BWP_18_BSL" valuetype="TEXT" geoInfluencing="TRUE">
+                    
+                    <!--
+                    <ITEM value="PLBWP" label="Prelam BWP" />
+                    <ITEM value="COMM_PLY" label="DC Premium Commercial Ply" />
+<ITEM value="BWP_18_BSL" label="BWP Ply" />
+<ITEM value="DC_ABETTI_PLY" label="ABETTI PLY" />
+<ITEM value="DC_SUPER_PLY" label="SUPER PLY" />
+-->
+                </COMBOBOX>
+
+            </GROUP>
+
+            <GROUP name="GR_CB_SURFACES" label="Carcass Colours">
+
+                <COMBOBOX name="DC_BA_COL_CAT" label="Colour Catagory" active="TRUE" visible="TRUE" nosave="FALSE" locked="TRUE" default="STD" valuetype="TEXT" geoInfluencing="TRUE">
+                    <ITEM value="STD" label="Standard" />
+                    <ITEM value="PRM" label="Premium" />
+                </COMBOBOX>
+
+                <COMBOBOX name="DC_KT_BA_CARCASS_COLOR" label="Carcass Colours" active="TRUE" visible="FALSE" nosave="FALSE" locked="TRUE" default="INT_VW_22291" valuetype="IMAGE" geoInfluencing="TRUE">
+                    <COMMAND type="INSERT" file="INS_DC_Colours.xml" part="Carcass_Color_List" />
+                </COMBOBOX>
+				
+				 <COMBOBOX name="DC_KT_BA_CARCASS_COLOR_display" label="Carcass Colours" active="TRUE" visible="TRUE" nosave="FALSE" locked="TRUE" default="" valuetype="IMAGE" geoInfluencing="TRUE">
+					
+					<ITEM value="INT_CJ_55793" tooltipid="" label="Cream Jute 55793" info1="ST1" info2="" info3="" image1="img/material/INT_CJ_55793.jpg" />
+					<!-- <ITEM value="INT_GJ_55696" tooltipid="" label="Grey Jute 55696" info1="ST2" info2="" info3="" image1="img/material/INT_GJ_55696.jpg" /> -->
+						<ITEM value="INT_SG_80139" tooltipid="" label="Silver Grey 80139" info1="ST2" info2="" info3="" image1="img/material/80139_SILVER_GREY.JPG" />
+					<ITEM value="INT_PP_10438" tooltipid="" label="Pemba Pine 10438" info1="PRM5" info2="" info3="" image1="img/material/INT_PP_10438.jpg" />
+					<ITEM value="INT_UT_10323" tooltipid="" label="Urban Teak 10323" info1="PRM6" info2="" info3="PLY" image1="img/material/INT_UT_10323.jpg" />
+					<ITEM value="INT_VW_22291" tooltipid="" label="Vanilla White 22291" info1="ST5" info2="" info3="PLY" image1="img/material/INT_VW_22291.jpg" />
+					<ITEM value="SF_LAM_PG_21003" tooltipid="" label="Prairie Green 21003" info1="PRM1" info2="" info3="" image1="img/material/SF_LAM_PG_21003.jpg" />
+					<ITEM value="SF_LAM_J_21307" tooltipid="" label="Jaisalmer 21307" info1="PRM2" info2="" info3="" image1="img/material/SF_LAM_J_21307.jpg" />
+					<ITEM value="SF_LAM_M_21057" tooltipid="" label="Marigold 21057" info1="PRM3" info2="" info3="" image1="img/material/SF_LAM_M_21057.jpg" />
+					<ITEM value="SF_LAM_S_21024" tooltipid="" label="Saffron 21024" info1="PRM4" info2="" info3="" image1="img/material/SF_LAM_S_21024.jpg" />
+				 
+				 </COMBOBOX> 
+
+            </GROUP>
+
+        </PARAFOLDER>
+
+
+    <EDITBOX name="___CalcPrinciple" label="Calc principle" active="TRUE" visible="FALSE" nosave="FALSE" locked="TRUE" valuetype="TEXT" default="CAL_PRIN_JL22" />
+<COMBOBOX name="DC_CAL_PRIN" label="Calculation Principle" active="TRUE" visible="FALSE" nosave="FALSE" locked="TRUE" default="CAL_PRIN_JL22" valuetype="TEXT" geoInfluencing="TRUE">
+ <ITEM value="CAL_PRIN_JL22" label="Kitchen Calculation Principle" />
+ 
+ </COMBOBOX>
+</DEFINITION>  
+
+    <CONSTRUCTION>
+
+        <ARTICLE_CON>
+
+            <ART_SIZEX>
+                <PARAM>ART_SIZEX</PARAM>
+            </ART_SIZEX>
+
+            <ART_SIZEY>
+                <PARAM>ART_SIZEY</PARAM>
+            </ART_SIZEY>
+
+            <ART_SIZEZ>
+                <PARAM>ART_SIZEZ</PARAM>
+            </ART_SIZEZ>
+
+        </ARTICLE_CON>
+
+        <VARIABLES>
+		
+			   <VAR name="DC_KT_BA_CARCASS_COLOR" value="DC_KT_BA_CARCASS_COLOR" />
+            <VAR name="DC_KT_BA_CARCASS_COLOR" value="DC_KT_BA_CARCASS_COLOR_display" />
+
+            <VAR name="DC_KT_BA_SHUTTER_MAT" value="DC_KT_BA_SHUTTER_MAT" />
+            <VAR name="DC_KT_BA_SHUTTER_COLOR" value="DC_KT_BA_SHUTTER_COLOR" />
+
+        <VAR name="___ARTICLE_POS_Z" value="___ARTICLE_POS_Z" /> 
+ <VAR name="ROOMNAME" value="ROOMNAME" />
+ <VAR name="DC_CAL_PRIN" value="DC_CAL_PRIN" />                                                                                                                          </VARIABLES>
+
+    </CONSTRUCTION>
+
+    <LOGIC_DEFINITION>
+
+      
+		<COMMAND type="INSERT" file="INS_DC_Logics.xml" part="BA_Carcass_Color_Logic" />
+		
+			   <COMMAND type="INSERT" file="INS_KT_BA_LOGICS.xml" part="FIN_SEL_1" />	
+
+
+    </LOGIC_DEFINITION>
+</XML>

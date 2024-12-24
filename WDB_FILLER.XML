@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+    <preview interactive="true" />
+
+    <ARTICLE>
+        <ART_NAME>WDB_FILLER</ART_NAME>
+        <ART_TYPE>ANGOLO</ART_TYPE>
+        <ART_DESIGN />
+        <ART_INFO_LONG />
+        <ART_INFO_SHORT>Wardrobe Filler</ART_INFO_SHORT>
+    </ARTICLE>
+
+    <DEFINITION>
+
+        <PARAFOLDER name="DIMENSIONS" label="Dimensions" active="TRUE" visible="TRUE" nosave="FALSE">
+
+            <GROUP name="GR_DIMENSIONS" label="Dimensions">
+
+                <EDITBOX name="HEIGHT" label="Height (mm)" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" valuetype="NUM" min="2000" max="3000" default="2100" geoInfluencing="TRUE" />
+
+                <EDITBOX name="WIDTH" label="Width (mm)" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" valuetype="NUM" min="50" max="100" default="100" geoInfluencing="TRUE" />
+
+                <EDITBOX name="DEPTH" label="Depth (mm)" active="TRUE" visible="TRUE" nosave="FALSE" locked="TRUE" valuetype="NUM" min="18" max="20" default="18" geoInfluencing="TRUE" />
+
+            </GROUP>
+
+        </PARAFOLDER>
+
+        <PARAFOLDER name="WDB_SH_COLOUR" label="Filler Material and Colours" active="TRUE" visible="TRUE" nosave="FALSE">
+
+            <COMBOBOX name="DC_WDB_SHUTTER_MAT" label="Filler Material" active="TRUE" visible="TRUE" nosave="FALSE" locked="TRUE" default="HDHMR" valuetype="" geoInfluencing="TRUE">
+                <ITEM value="HDHMR" label="HDHMR" />
+                <ITEM value="HDHMR_6" label="HDHMR" />
+                <ITEM value="ACRYLIC" label="ACRYLIC" />
+                <ITEM value="DUCO" label="DUCO" />
+                <ITEM value="GLASS" label="GLASS" />
+
+            </COMBOBOX>
+
+            <GROUP name="GR_WDB_SH_SURF" label="Front Colours" active="TRUE" visible="TRUE">
+
+                <COMBOBOX name="SH_WDB_COL_FIN" label="Colour Finishes" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="LAMINATE" valuetype="TEXT" geoInfluencing="TRUE">
+                    <ITEM value="LAMINATE" label="Laminate" />
+                    <ITEM value="ACRYLIC" label="Acrylic" />
+                    <ITEM value="VENEER" label="Veneer" />
+                    <ITEM value="DUCO" label="Duco" />
+                </COMBOBOX>
+
+                <COMBOBOX name="SH_WDB_LAM_CAT" label="Laminate Brands" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="MER" valuetype="TEXT" geoInfluencing="TRUE">
+                    <ITEM value="MER" label="DC Nova" />
+                     <ITEM value="ABT" label="Abbetti" /><ITEM value="ESP" label="Aria" />
+                </COMBOBOX>
+
+                <GROUP name="GR_WDB_SH_LAM" label="Laminate Colours" active="TRUE" visible="TRUE">
+
+                    <COMBOBOX name="SH_WDB_COL_TYP" label="Colour Types" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="WOOD" valuetype="TEXT" geoInfluencing="TRUE">
+                        <ITEM value="SOLID" label="Solids" />
+                        <ITEM value="WOOD" label="Wood Grains" />
+                        <ITEM value="TEXTURE" label="Textures" />    <ITEM value="MET" label="Metallic" />    
+                    </COMBOBOX>
+
+                    <COMBOBOX name="SH_WDB_WG_CAT" label="Wood Grain Finishes" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="NATURAL" valuetype="TEXT" geoInfluencing="TRUE">
+                        <ITEM value="NATURAL" label="Natural Wood" />
+                        <ITEM value="FIGURED" label="Figured Wood" />
+                    </COMBOBOX>
+
+                    <COMBOBOX name="SH_WDB_TX_CAT" label="Texture Finishes" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="STONES" valuetype="TEXT" geoInfluencing="TRUE">
+                        <ITEM value="STONES" label="Stones" />
+                        <ITEM value="RUSTIC" label="Rustic" />
+                        <ITEM value="FABRICS" label="Fabric" />
+                        <ITEM value="CONCRETE" label="Concrete" />
+                        <ITEM value="FLORAL" label="Floral" />
+                        <ITEM value="HG" label="High Gloss" />
+                    </COMBOBOX>
+
+                    <COMBOBOX name="SH_WDB_SD_CAT" label="Solid Finishes" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="MATTE" valuetype="TEXT" geoInfluencing="TRUE">
+                        <ITEM value="MATTE" label="Matte" />
+                        <ITEM value="TX" label="Textures" />
+                        <!--                        <ITEM value="HGL" label="High Gloss" />-->
+
+                        <ITEM value="WIC" label="Whites Ivory Cream" />
+                        <ITEM value="GRY" label="Greys" />
+                        <ITEM value="BLK" label="Blacks" />
+                        <ITEM value="BWN" label="Browns" />
+                        <ITEM value="BLU" label="Blues" />
+                        <ITEM value="GRN" label="Greens" />
+                        <ITEM value="YO" label="Yellows Oranges" />
+                        <ITEM value="RED" label="Reds" />
+                        <ITEM value="PNK" label="Pinks" />
+                        <ITEM value="PRL" label="Purples" />
+						<ITEM value="MR" label="MR Plus" />
+                          
+                    </COMBOBOX>
+
+                </GROUP>
+
+                <COMBOBOX name="SH_WDB_DU_CAT" label="Duco Finishes" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="HG" valuetype="TEXT" geoInfluencing="TRUE">
+                    <ITEM value="HG" label="High Gloss" />
+                    <ITEM value="MATTE" label="Matte" />
+
+                </COMBOBOX>
+
+                <COMBOBOX name="SH_WDB_GL_CAT" label="Type of Glass" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="LAQ" valuetype="TEXT" geoInfluencing="TRUE">
+                    <ITEM value="LAQ" label="Laquered Glass" />
+                    <ITEM value="MIR" label="Mirror" />
+
+                </COMBOBOX>
+
+                <COMBOBOX name="DC_WDB_SHUTTER_COLOR" label="Filler Colour" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="" valuetype="IMAGE" geoInfluencing="TRUE">
+                    <COMMAND type="INSERT" file="INS_DC_WDB_Colous.xml" part="Shutter_Color_List" />
+                </COMBOBOX>
+
+            </GROUP>
+
+        </PARAFOLDER>
+
+
+        <PARAFOLDER name="WDB_CB_COLOUR" label="Carcass" active="TRUE" visible="TRUE" nosave="FALSE">
+
+            <GROUP name="GR_WDB_CB_MAT" label="Carcass Materials">
+
+                <CHECKBOX name="WDB_CB_PRELAM" label="Click for Prelam" default="No" checked="Yes" unchecked="No" active="TRUE" visible="FALSE" locked="TRUE" geoInfluencing="TRUE" />
+
+                <COMBOBOX name="DC_WDB_CARCASS_MAT" label="Carcass Material" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="COMM_PLY" valuetype="TEXT" geoInfluencing="TRUE">
+                    <ITEM value="COMM_PLY" label="Commercial Ply" />
+					<ITEM value="BWP_18_BSL" label="BWP PLY" />
+                    <!--
+                    <ITEM value="PLBWP" label="Prelam BWP" />
+                    <ITEM value="COMM_PLY" label="Commercial Ply" />
+-->
+                </COMBOBOX>
+
+            </GROUP>
+
+            <GROUP name="GR_WDB_CB_SURFACES" label="Carcass Colours">
+
+                <COMBOBOX name="DC_WDB_COL_CAT" label="Colour Catagory" active="TRUE" visible="TRUE" nosave="FALSE" locked="TRUE" default="STD" valuetype="TEXT" geoInfluencing="TRUE">
+                    <ITEM value="STD" label="Standard" />
+                    <ITEM value="PRM" label="Premium" />
+                </COMBOBOX>
+
+                <COMBOBOX name="DC_WDB_CARCASS_COLOR" label="Carcass Colour" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="INT_CJ_55793" valuetype="IMAGE" geoInfluencing="TRUE">
+                    <COMMAND type="INSERT" file="INS_DC_WDB_Colous.xml" part="Carcass_Color_List" />
+                </COMBOBOX>
+
+            </GROUP>
+
+        </PARAFOLDER>
+		
+		<EDITBOX name="___CalcPrinciple" label="Calc principle" active="TRUE" visible="FALSE" nosave="FALSE" locked="TRUE" valuetype="TEXT" default="CAL_PRIN_JL22" />
+
+<COMBOBOX name="DC_CAL_PRIN" label="Calculation Principle" active="TRUE" visible="FALSE" nosave="FALSE" locked="TRUE" default="CAL_PRIN_JL22" valuetype="TEXT" geoInfluencing="TRUE">
+ <ITEM value="CAL_PRIN_JL22" label="Wardrobe Calculation Principle" /> 
+ </COMBOBOX>
+
+    </DEFINITION>
+
+    <CONSTRUCTION>
+
+        <ARTICLE_CON>
+
+            <ART_SIZEX>
+                <PARAM>WIDTH</PARAM>
+            </ART_SIZEX>
+
+            <ART_SIZEY>
+                <PARAM>DEPTH</PARAM>
+            </ART_SIZEY>
+
+            <ART_SIZEZ>
+                <PARAM>HEIGHT</PARAM>
+            </ART_SIZEZ>
+
+        </ARTICLE_CON>
+
+        <VARIABLES>
+
+
+            <VAR name="DC_WDB_CARCASS_COLOR" value="DC_WDB_CARCASS_COLOR" />
+            <VAR name="DC_WDB_SHUTTER_MAT" value="DC_WDB_SHUTTER_MAT" />
+            <VAR name="DC_WDB_SHUTTER_COLOR" value="DC_WDB_SHUTTER_COLOR" />
+
+        <VAR name="ROOMNAME" value="ROOMNAME" />                                                                                                                          </VARIABLES>
+
+    </CONSTRUCTION>
+
+    <LOGIC_DEFINITION>
+
+        <IF>
+            <EQ expr1="FIELD(SH_WDB_COL_FIN).value" expr2="ACRYLIC" />
+            <THEN>
+                <COMMAND>"FIELD(DC_WDB_SHUTTER_MAT).value=ACRYLIC"</COMMAND>
+            </THEN>
+            <ELSE>
+                <IF>
+                    <EQ expr1="FIELD(SH_WDB_COL_FIN).value" expr2="DUCO" />
+                    <THEN>
+                        <COMMAND>"FIELD(DC_WDB_SHUTTER_MAT).value=DUCO"</COMMAND>
+                    </THEN>
+                    <ELSE>
+                        <COMMAND>"FIELD(DC_WDB_SHUTTER_MAT).value=HDHMR"</COMMAND>
+                    </ELSE>
+                </IF>
+            </ELSE>
+        </IF>
+
+        <IF>
+            <EQ expr1="FIELD(DC_WDB_COL_CAT).value" expr2="STD" />
+            <THEN>
+                <COMMAND>"FIELD(DC_WDB_CARCASS_COLOR).Info1List(STD)"</COMMAND>
+            </THEN>
+            <ELSE>
+                <COMMAND>"FIELD(DC_WDB_CARCASS_COLOR).Info1List(PRM)"</COMMAND>
+            </ELSE>
+        </IF>
+
+        <COMMAND type="INSERT" file="INS_DC_WDB_Colous.xml" part="WDB_SH_GL_DU_Catagoy_Logic" />
+		
+		<IF>
+ 
+            <EQ expr1="FIELD(SH_WDB_LAM_CAT).value" expr2="MER" />
+		
+		
+				
+            <THEN>
+                <COMMAND>"FIELD(SH_WDB_COL_TYP).ItemList(SOLID,WOOD,TEXTURE)"</COMMAND>
+            </THEN>
+            <ELSE>
+                <COMMAND>"FIELD(SH_WDB_COL_TYP).ItemList(SOLID,WOOD,TEXTURE,MET)"</COMMAND>
+            </ELSE>
+			
+        </IF>
+		
+		
+		
+		
+				 <IF>
+                    <EQ expr1="FIELD(SH_WDB_LAM_CAT).value" expr2="MER" />
+                    <THEN>
+                        <COMMAND>"FIELD(SH_WDB_SD_CAT).ItemList(WIC,GRY,BLK,BWN,BLU,GRN,YO,RED,PNK,PRL,MR)"</COMMAND>
+                    </THEN>
+                    <ELSE>
+                        <COMMAND>"FIELD(SH_WDB_SD_CAT).ItemList(MATTE,TX)"</COMMAND>
+                    </ELSE>
+                </IF>
+				
+		
+		
+        <COMMAND type="INSERT" file="INS_DC_WDB_Colous.xml" part="WDB_SH_LAM_Color_Disply_Logic" />
+        <COMMAND type="INSERT" file="INS_DC_WDB_Colous.xml" part="WDB_SH_LAM_Catagory_Disply_Logic" />
+
+    </LOGIC_DEFINITION>
+</XML>
