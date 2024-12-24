@@ -172,6 +172,12 @@
 		
 	  <COMMAND type="INSERT" file="INS_KT_BA_LOGICS.xml" part="BA_FIN_SEL_1" />	
       
+ <COMMAND type="INSERT" file="INS_KT_BA_LOGICS.xml" part="BA_FIN_SEL_1" />	
+      
+ <COMMAND type="INSERT" file="INS_KT_BA_LOGICS.xml" part="BA_FIN_SEL_1" />	
+      
+ <COMMAND type="INSERT" file="INS_KT_BA_LOGICS.xml" part="BA_FIN_SEL_1" />	
+      
 
 
     </LOGIC_DEFINITION>
