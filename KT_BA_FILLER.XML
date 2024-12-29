@@ -58,6 +58,7 @@
                     <ITEM value="DC_Abetti" label="DC Abetti" />
 		            <ITEM value="DC_Premium" label="DC Premium" />
 		            <ITEM value="DC_Signature" label="DC Signature" />
+ <ITEM value="DC_Signature" label="DC Signature" />
                  </COMBOBOX>
 
                 <GROUP name="GR_SH_LAM" label="Laminate Colours" active="TRUE" visible="TRUE">
