@@ -94,6 +94,16 @@
             </GROUP>
 
         </PARAFOLDER>
+	     <PARAFOLDER name="WA_CB_COLOUR" label="Carcass Material and Colours" active="TRUE" visible="TRUE" nosave="FALSE">
+
+            <GROUP name="GR_WA_CB_MAT" label="Carcass Materials">
+
+                <CHECKBOX name="WA_DC_CB_PRELAM" label="Click for Prelam" default="No" checked="Yes" unchecked="No" active="TRUE" visible="FALSE" locked="TRUE" geoInfluencing="TRUE" />
+
+                <COMBOBOX name="DC_KT_WA_CARCASS_MAT" label="Carcass Material" active="TRUE" visible="TRUE" nosave="FALSE" locked="TRUE" default="COM_PLY_18_BSL" valuetype="TEXT" geoInfluencing="TRUE">
+                    <ITEM value="COM_PLY_18_BSL" label="Commercial Ply" />
+					<ITEM value="DC_ABETTI_PLY" label="ABETTI PLY" />
+<ITEM value="DC_SUPER_PLY" label="SUPER PLY" />
 
         <PARAFOLDER name="WA_CB_COLOUR" label="Carcass Material and Colours" active="TRUE" visible="TRUE" nosave="FALSE">
 
