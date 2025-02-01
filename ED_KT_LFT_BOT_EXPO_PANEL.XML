@@ -38,6 +38,9 @@
                     <ITEM value="ACRYLIC" label="ACRYLIC" />
                     <ITEM value="DUCO" label="DUCO" />
                     <ITEM value="VENEER" label="VENNER" />
+                   <ITEM value="VENEER" label="VENNER" />
+                   <ITEM value="VENEER" label="VENNER" />
+                   <ITEM value="VENEER" label="VENNER" />
                   
                 </COMBOBOX>
 
@@ -112,6 +115,8 @@
                     <ITEM value="STD" label="Standard" />
                     <ITEM value="PRM" label="Premium" />
                 </COMBOBOX>
+
+
 
                 <COMBOBOX name="DC_KT_WA_CARCASS_COLOR" label="Carcass Colours" active="TRUE" visible="FALSE" nosave="FALSE" locked="TRUE" default="INT_VW_22291" valuetype="IMAGE" geoInfluencing="TRUE">
                     <COMMAND type="INSERT" file="INS_DC_Colours.xml" part="Carcass_Color_List" />
