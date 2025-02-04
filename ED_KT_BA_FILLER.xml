@@ -75,7 +75,7 @@
 				   <COMBOBOX name="DC_KT_BA_SHUTTER_COLOR" label="Shutter Colour" active="TRUE" visible="TRUE" nosave="FALSE" locked="FALSE" default="" valuetype="IMAGE"  geoInfluencing="TRUE">
                     <COMMAND type="INSERT" file="INS_KT_BA_LOGICS.xml" part="Shutter_Color_List" />
                    </COMBOBOX>
-		</
+		</yes??>
                 </GROUP>
 
             </GROUP>
